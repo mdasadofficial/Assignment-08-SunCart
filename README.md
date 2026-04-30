@@ -47,3 +47,89 @@ SunCart is designed as a learning + real-world eCommerce project where users can
 ---
 
 ## 📂 Project Structure
+
+suncart/
+│
+├── public/
+│   ├── images/
+│   │   ├── hero1.jpg
+│   │   ├── hero2.jpg
+│   │   ├── product1.png
+│   │   └── brands/
+│   │       ├── brand1.png
+│   │       ├── brand2.png
+│   │
+│   └── favicon.ico
+│
+├── src/
+│   ├── app/
+│   │   ├── layout.jsx
+│   │   ├── page.jsx                // Home Page
+│   │
+│   │   ├── products/
+│   │   │   ├── page.jsx           // All products page
+│   │   │   └── [id]/
+│   │   │       └── page.jsx       // Product Details (Protected)
+│   │
+│   │   ├── login/
+│   │   │   └── page.jsx
+│   │
+│   │   ├── register/
+│   │   │   └── page.jsx
+│   │
+│   │   ├── profile/
+│   │   │   ├── page.jsx           // My Profile
+│   │   │   └── update/
+│   │   │       └── page.jsx       // Update Profile
+│   │
+│   │   └── not-found.jsx
+│
+│   ├── components/
+│   │   ├── shared/
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   └── Container.jsx
+│   │
+│   │   ├── home/
+│   │   │   ├── Hero.jsx
+│   │   │   ├── PopularProducts.jsx
+│   │   │   ├── ProductCard.jsx
+│   │   │   ├── SummerTips.jsx
+│   │   │   └── TopBrands.jsx
+│   │
+│   │   ├── products/
+│   │   │   ├── ProductDetails.jsx
+│   │   │   └── ProductList.jsx
+│   │
+│   │   ├── auth/
+│   │   │   ├── LoginForm.jsx
+│   │   │   └── RegisterForm.jsx
+│   │
+│   │   └── ui/
+│   │       ├── Button.jsx
+│   │       ├── Input.jsx
+│   │       └── Loader.jsx
+│
+│   ├── lib/
+│   │   ├── auth.js                // BetterAuth config
+│   │   └── utils.js
+│
+│   ├── hooks/
+│   │   ├── useAuth.js
+│   │   └── useProducts.js
+│
+│   ├── data/
+│   │   └── products.json         // Static product data
+│
+│   ├── middleware.js             // Route protection
+│
+│   └── styles/
+│       └── globals.css
+│
+├── .env.local                    // Environment variables
+├── .gitignore
+├── package.json
+├── tailwind.config.js
+├── postcss.config.js
+├── next.config.js
+├── README.md
