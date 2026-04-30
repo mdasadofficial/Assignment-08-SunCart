@@ -41,7 +41,7 @@ const BannerSlider = () => {
               alt="Banner 2"
               fill
               className="object-fill"
-            />
+            />  
           </div>
         </SwiperSlide>
 
