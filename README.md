@@ -40,7 +40,7 @@ SunCart is designed as a learning + real-world eCommerce project where users can
 - **Next.js**
 - **React.js**
 - **Tailwind CSS**
-- **DaisyUI / HeroUI**
+- **HeroUI**
 - **BetterAuth**
 - **React Icons**
 
