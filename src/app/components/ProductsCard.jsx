@@ -1,5 +1,6 @@
 import { Card, Chip } from "@heroui/react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const ProductsCard = ({ photo }) => {
@@ -28,12 +29,12 @@ const ProductsCard = ({ photo }) => {
       <p className="text-xl font-bold text-green-600">
         ${photo.price.toFixed(2)}
       </p>
-      <button
-        href="#"
+      <Link
+        href={`/products/${photo.id}`}
         className="mt-4 w-full bg-green-500 text-white py-2 px-4 rounded-full hover:bg-green-900 transition duration-300"
       >
         View Details
-      </button>
+      </Link>
     </Card>
   );
 };
