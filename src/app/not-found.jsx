@@ -2,10 +2,10 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center text-center bg-linear-to-r from-orange-50 to-yellow-50 px-4">
+    <div className="min-h-screen flex flex-col items-center justify-center text-center bg-gradient-to-r from-orange-50 to-yellow-50 px-4 w-full h-full">
 
       {/* Big 404 */}
-      <h1 className="text-7xl md:text-8xl font-extrabold bg-linear-to-r from-orange-500 to-yellow-400 text-transparent bg-clip-text">
+      <h1 className="text-7xl md:text-8xl font-extrabold bg-gradient-to-r from-orange-500 to-yellow-400 text-transparent bg-clip-text">
         404
       </h1>
 
@@ -22,15 +22,12 @@ export default function NotFound() {
       {/* Button */}
       <Link
         href="/"
-        className="mt-6 px-6 py-3 rounded-full bg-linear-to-r from-orange-500 to-yellow-400 text-white font-semibold shadow-md hover:scale-105 transition duration-300"
+        className="mt-6 px-6 py-3 rounded-full bg-gradient-to-r from-orange-500 to-yellow-400 text-white font-semibold shadow-md hover:scale-105 transition duration-300"
       >
         🔙 Back to Home
       </Link>
 
-      {/* Extra Decoration */}
-      <div className="mt-10 text-sm text-gray-400">
-        SunCart © {new Date().getFullYear()}
-      </div>
+      
 
     </div>
   );

@@ -10,9 +10,7 @@ import Image from "next/image";
 
 const BannerSlider = () => {
   return (
-    
-    <div className="w-full aspect-[16/9] md:aspect-[21/9] lg:aspect-[3/1] max-h-[500px] overflow-hidden">
-
+    <div className="w-full h-full aspect-video md:aspect-21/9 lg:aspect-3/1 max-h-125 overflow-hidden">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         navigation
@@ -27,8 +25,7 @@ const BannerSlider = () => {
               src="/assets/banner1.png"
               alt="Banner 1"
               fill
-              
-              className="object-fill" 
+              className="object-fill"
               priority
             />
           </div>
@@ -41,7 +38,7 @@ const BannerSlider = () => {
               alt="Banner 2"
               fill
               className="object-fill"
-            />  
+            />
           </div>
         </SwiperSlide>
 
