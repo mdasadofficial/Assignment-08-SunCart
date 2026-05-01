@@ -5,7 +5,7 @@ A modern summer eCommerce web application built with **Next.js**, where users ca
 ---
 
 ## 🚀 Live Demo
-👉 [Your Live URL Here]
+👉 [https://assignment-08-sun-cart.vercel.app/]
 
 ---
 
