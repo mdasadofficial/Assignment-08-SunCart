@@ -22,9 +22,7 @@ const PopularProducts = async () => {
           <div key={photo.id} className="bg-white p-4 rounded-lg shadow-md">
             <ProductsCard photo={photo} />
             
-            <button href="#" className="mt-4 w-full bg-green-500 text-white py-2 px-4 rounded-full hover:bg-green-900 transition duration-300">
-              View Details
-            </button>
+           
           </div>
         ))}
       </div>
