@@ -47,29 +47,31 @@ const Navbar = () => {
           </li>
 
           {/* Auth Buttons */}
-          <li className="flex items-center gap-3 ml-4">
-            <Link
-              href={"/signin"}
-              className={`transition ${
-                pathname === "/signin"
-                  ? "px-4 py-1.5 rounded-lg border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white transition"
-                  : "text-gray-600 hover:text-orange-500"
-              }`}
-            >
-              Sign In
-            </Link>
+          <div>
+            <li className="flex items-center gap-3 ml-4">
+              <Link
+                href={"/signin"}
+                className={`transition ${
+                  pathname === "/signin"
+                    ? "px-4 py-1.5 rounded-lg border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white transition"
+                    : "text-gray-600 hover:text-orange-500"
+                }`}
+              >
+                Sign In
+              </Link>
 
-            <Link
-              href={"/signup"}
-              className={`transition ${
-                pathname === "/signup"
-                  ? "px-4 py-1.5 rounded-lg border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white transition"
-                  : "text-gray-600 hover:text-orange-500"
-              }`}
-            >
-              Sign Up
-            </Link>
-          </li>
+              <Link
+                href={"/signup"}
+                className={`transition ${
+                  pathname === "/signup"
+                    ? "px-4 py-1.5 rounded-lg border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white transition"
+                    : "text-gray-600 hover:text-orange-500"
+                }`}
+              >
+                Sign Up
+              </Link>
+            </li>
+          </div>
         </ul>
       </div>
     </nav>
