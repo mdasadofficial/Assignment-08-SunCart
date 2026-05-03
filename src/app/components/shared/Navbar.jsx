@@ -8,7 +8,11 @@ import { authClient } from "@/lib/auth-client";
 const Navbar = () => {
   const userData = authClient.useSession();
   const user = userData?.data?.user;
-  console.log(user);
+  
+  const handleSignOut = async () =>{
+    await authClient.signOut()
+  }
+  
 
   const pathname = usePathname();
   return (
@@ -105,7 +109,7 @@ const Navbar = () => {
               </Avatar>
 
               <button
-                onClick={() => authClient.signOut()}
+                onClick={handleSignOut}
                 className="px-4 py-1.5 rounded-full border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white transition"
               >
                 Sign Out
