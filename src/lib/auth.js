@@ -15,9 +15,9 @@ export const auth = betterAuth({
     enabled: true,
   },
 
-  social: {
+  socialProviders: {
     google: {
-      enabled: true,
+      
       clientId: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     },
