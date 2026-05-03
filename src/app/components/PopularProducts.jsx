@@ -4,7 +4,7 @@ import ProductsCard from "./ProductsCard";
 
 const PopularProducts = async () => {
   const res = await fetch(
-    "https://assignment-08-sun-cart.vercel.app/data.json",
+    "http://localhost:3000/data.json",
   );
   const photos = await res.json();
   // console.log(photos,"photos");

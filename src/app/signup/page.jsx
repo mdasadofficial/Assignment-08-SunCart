@@ -1,6 +1,7 @@
 "use client";
 import { authClient } from "@/lib/auth-client";
 import { Check } from "@gravity-ui/icons";
+import { useRouter } from "next/navigation"; 
 import {
   Button,
   Card,
@@ -13,9 +14,10 @@ import {
 } from "@heroui/react";
 
 export default function SignUpPage() {
+  const router = useRouter();
+
   const onSubmit = async (e) => {
     e.preventDefault();
-
 
     const name = e.target.name.value;
     const image = e.target.image.value;
@@ -28,7 +30,12 @@ export default function SignUpPage() {
       password,
       image,
     });
+
     console.log({ data, error });
+
+    if (!error) {
+      router.push("/");
+    }
   };
 
   return (
