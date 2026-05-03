@@ -45,6 +45,18 @@ const Navbar = () => {
               Products
             </Link>
           </li>
+          <li>
+            <Link
+              href="/profile"
+              className={`transition ${
+                pathname === "/profile"
+                  ? "text-orange-500 font-semibold"
+                  : "text-gray-600 hover:text-orange-500"
+              }`}
+            >
+              Profile
+            </Link>
+          </li>
 
           {/* Auth Buttons */}
           <div>
