@@ -1,6 +1,6 @@
 "use client";
 
-import { Avatar, Link } from "@heroui/react";
+import { Avatar, Button, Link } from "@heroui/react";
 import { FaShoppingCart } from "react-icons/fa";
 import { usePathname } from "next/navigation";
 import { authClient } from "@/lib/auth-client";
@@ -71,7 +71,7 @@ const Navbar = () => {
         </ul>
 
         {/* Auth Buttons */}
-        <div className="flex items-center gap-3">
+        <div>
           {!user && (
             <ul className="flex items-center gap-4">
               <Link
@@ -98,7 +98,7 @@ const Navbar = () => {
             </ul>
           )}
           {user && (
-            <div flex className="flex gap-3">
+            <div className="flex gap-3">
               <Avatar>
                 <Avatar.Image
                   alt="John Doe"
@@ -108,12 +108,12 @@ const Navbar = () => {
                 <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
               </Avatar>
 
-              <button
+              <Button
                 onClick={handleSignOut}
-                className="px-4 py-1.5 rounded-full border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white transition"
+                className="px-4 py-1.5 rounded-full border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white transition" variant="outline"
               >
-                Sign Out
-              </button>
+                SignOut
+              </Button>
             </div>
           )}
         </div>
