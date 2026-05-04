@@ -1,7 +1,7 @@
 "use client";
 import { authClient } from "@/lib/auth-client";
 import { Check } from "@gravity-ui/icons";
-import { useRouter } from "next/navigation"; 
+import { useRouter } from "next/navigation";
 import {
   Button,
   Card,
@@ -109,7 +109,6 @@ export default function SignUpPage() {
           </Button>
         </div>
       </Form>
-      
     </Card>
   );
 }

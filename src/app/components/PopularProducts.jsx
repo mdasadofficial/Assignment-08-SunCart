@@ -1,6 +1,4 @@
-
 import ProductsCard from "./ProductsCard";
-
 
 const PopularProducts = async () => {
   const res = await fetch(
@@ -21,8 +19,6 @@ const PopularProducts = async () => {
         {topBrands.map((photo) => (
           <div key={photo.id} className="bg-white p-4 rounded-lg shadow-md">
             <ProductsCard photo={photo} />
-            
-           
           </div>
         ))}
       </div>

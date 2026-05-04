@@ -8,11 +8,10 @@ import { authClient } from "@/lib/auth-client";
 const Navbar = () => {
   const userData = authClient.useSession();
   const user = userData?.data?.user;
-  
-  const handleSignOut = async () =>{
-    await authClient.signOut()
-  }
-  
+
+  const handleSignOut = async () => {
+    await authClient.signOut();
+  };
 
   const pathname = usePathname();
   return (
@@ -110,7 +109,8 @@ const Navbar = () => {
 
               <Button
                 onClick={handleSignOut}
-                className="px-4 py-1.5 rounded-full border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white transition" variant="outline"
+                className="px-4 py-1.5 rounded-full border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white transition"
+                variant="outline"
               >
                 SignOut
               </Button>
