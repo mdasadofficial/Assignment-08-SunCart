@@ -4,16 +4,14 @@ import { authClient } from "@/lib/auth-client";
 import { Avatar, Card } from "@heroui/react";
 import { UpdateUserModal } from "../../../UpdateUserModal";
 
-// import { authClient } from "@/lib/auth-client";
 
-// const userData = authClient.useSession();
-// const user = userData.data?.user;
 
 const ProfilePage = () => {
   const userData = authClient.useSession();
   const user = userData?.data?.user;
 
-  console.log(user);
+
+  
 
   return (
     <div>
