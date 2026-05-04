@@ -18,7 +18,7 @@
     "rating": 4.5,
     "stock": 20,
     "description": "Handheld rechargeable mini fan to keep you cool anywhere.",
-    "image": "https://ibb.co.com/G4xznk0m",
+    "image": "https://i.ibb.co.com/4nmhKM7k/Portable-Mini-Fan.jpg",
     "category": "Electronics"
   },
   {
@@ -29,7 +29,7 @@
     "rating": 4.6,
     "stock": 30,
     "description": "Lightweight breathable cotton t-shirt for hot weather.",
-    "image": "https://ibb.co.com/GfSL6RMZ",
+    "image": "https://i.ibb.co.com/204Q9dMz/Summer-Cotton-T-Shirt.jpg",
     "category": "Clothing"
   },
   {
@@ -40,7 +40,7 @@
     "rating": 4.8,
     "stock": 15,
     "description": "Keeps your drinks cold for up to 12 hours.",
-    "image": "https://ibb.co.com/v6Z6gPLy",
+    "image": "https://i.ibb.co.com/KpFpRqV4/Insulated-Water-Bottle.jpg",
     "category": "Lifestyle"
   },
   {
@@ -51,7 +51,7 @@
     "rating": 4.4,
     "stock": 25,
     "description": "Comfortable and durable sandals for beach and casual wear.",
-    "image": "https://ibb.co.com/Y7c58wFF",
+    "image": "https://i.ibb.co.com/SXtk0G44/Beach-Sandals.jpg",
     "category": "Footwear"
   },
   {
@@ -62,7 +62,7 @@
     "rating": 4.9,
     "stock": 18,
     "description": "High protection sunscreen for all skin types.",
-    "image": "https://ibb.co.com/yFQcm5Jx",
+    "image": "https://i.ibb.co.com/s9VdpQrX/Sunscreen-SPF-50.jpg",
     "category": "Beauty"
   }
 ]
